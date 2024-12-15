@@ -1,6 +1,5 @@
 (ns aoc-2024.day3
-  (:require [clojure.java.io :as io]
-            [clojure.string :as str]))
+  (:require [clojure.string :as str]))
 
 ;--- Day 3: Mull It Over ---
 ;"Our computers are having issues, so I have no idea if we have any Chief Historians in stock! You're welcome to check
@@ -76,14 +75,4 @@
    (parse-multiplications (remove-donts input)))
   ([]
    (calculate-part-two (slurp "resources/day3_input.txt"))))
-
-(def sample-input (slurp "resources/day3_test_input.txt"))
-(def actual-input (slurp "resources/day3_input.txt"))
-
-
-(println "Sample Input Part 1:" (calculate-part-one sample-input))
-(println "Sample Input Part 2:"
-         (calculate-part-two "xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))"))
-(println "Actual Input Part 1:" (calculate-part-one actual-input))
-(println "Actual Input Part 2:" (calculate-part-two actual-input))
 
