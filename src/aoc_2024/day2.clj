@@ -81,7 +81,7 @@
   [reports]
   (count (filter is-report-valid reports)))
 
-(defn part-one
+(defn calculate-part-one
   "Calculates, prints, and returns the Day 2 answer."
   []
   (let [file-path "resources/day2_input.txt"
@@ -128,7 +128,7 @@
   [reports]
   (count (filter is-report-safe-with-dampener reports)))
 
-(defn part-two
+(defn calculate-part-two
   "Calculates, prints, and returns the Day 2 Part Two answer."
   []
   (let [file-path "resources/day2_input.txt"

@@ -64,7 +64,7 @@
   [[left-list right-list]]
   (reduce + (map #(Math/abs (- (first %) (second %))) (map vector left-list right-list))))
 
-(defn part-one
+(defn calculate-part-one
   "Calculates, prints, and returns the Day 1 answer."
   []
   (let [file-path "resources/day1_input.txt"
@@ -110,7 +110,7 @@
                      (* value count)))
                  left-list)))
 
-(defn part-two
+(defn calculate-part-two
   "Calculates, prints, and returns the Day 1 answer."
   []
   (let [file-path "resources/day1_input.txt"
